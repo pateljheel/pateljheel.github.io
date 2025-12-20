@@ -2,7 +2,7 @@ name: Deploy Next.js to Pages
 
 on:
   push:
-    branches: ["main"] # Replace with your default branch name
+    branches: ["main"]
 
 permissions:
   contents: read
@@ -12,6 +12,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # This tells the Action to run all "run" commands inside the subfolder
     defaults:
       run:
         working-directory: ./scienceto
@@ -23,6 +24,8 @@ jobs:
         with:
           node-version: "20"
           cache: 'npm'
+          # Tell the cache where to find the lock file
+          cache-dependency-path: './scienceto/package-lock.json'
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Install dependencies
@@ -32,7 +35,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out # Next.js static output folder
+          # Point this to the output folder inside your subfolder
+          path: ./scienceto/out
 
   deploy:
     environment:
