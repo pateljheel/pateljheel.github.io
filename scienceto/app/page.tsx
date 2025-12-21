@@ -102,7 +102,7 @@ I believe the simplest solution is usually the most resilient. I translate compl
             >
               <div className="group flex items-center gap-6 p-5 bg-zinc-900/40 border border-white/5 rounded-2xl hover:border-blue-500/30 transition-all">
                 <div className="w-14 h-14 bg-blue-600/10 rounded-xl flex items-center justify-center border border-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.1)]">
-                  <img src="/icons/aws-saa.svg" alt="AWS" className="w-8 h-8" />
+                  <img src="/icons/aws-saa.png" alt="AWS" className="w-8 h-8" />
                 </div>
                 <div>
                   <h4 className="text-white font-semibold group-hover:text-blue-400 transition-colors">AWS Solutions Architect</h4>
@@ -119,7 +119,7 @@ I believe the simplest solution is usually the most resilient. I translate compl
             >
               <div className="group flex items-center gap-6 p-5 bg-zinc-900/40 border border-white/5 rounded-2xl hover:border-blue-500/30 transition-all">
                 <div className="w-14 h-14 bg-zinc-800/40 rounded-xl flex items-center justify-center border border-white/10 shadow-[0_0_15px_rgba(255,255,255,0.03)]">
-                  <img src="/icons/terraform.svg" alt="CKAD" className="w-8 h-8" />
+                  <img src="/icons/ckad.png" alt="CKAD" className="w-8 h-8" />
                 </div>
                 <div>
                   <h4 className="text-white font-semibold group-hover:text-blue-400 transition-colors">Kubernetes Application Developer</h4>
@@ -146,7 +146,7 @@ I believe the simplest solution is usually the most resilient. I translate compl
             >
               <div className="flex items-center gap-4 p-4 bg-zinc-900/10 border border-white/5 rounded-xl grayscale opacity-60 hover:opacity-100 transition-opacity">
                 <div className="w-10 h-10 bg-zinc-900 rounded-lg flex items-center justify-center border border-white/5">
-                  <span className="text-zinc-600 text-xs font-bold font-mono">GCP PCA</span>
+                  <img src="/icons/gcp-pca.png" alt="GCP PCA" className="w-8 h-8" />
                 </div>
                 <div>
                   <h4 className="text-sm text-zinc-400 font-medium decoration-zinc-700">Google Cloud Professional Cloud Architect</h4>
@@ -163,7 +163,7 @@ I believe the simplest solution is usually the most resilient. I translate compl
             >
               <div className="flex items-center gap-4 p-4 bg-zinc-900/10 border border-white/5 rounded-xl grayscale opacity-60 hover:opacity-100 transition-opacity">
                 <div className="w-10 h-10 bg-zinc-900 rounded-lg flex items-center justify-center border border-white/5">
-                  <span className="text-zinc-600 text-xs font-bold font-mono">GCP ACE</span>
+                  <img src="/icons/gcp-ace.png" alt="GCP ACE" className="w-8 h-8" />
                 </div>
                 <div>
                   <h4 className="text-sm text-zinc-400 font-medium">Google Cloud Associate Cloud Engineer</h4>
