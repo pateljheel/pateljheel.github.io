@@ -5,24 +5,35 @@ import ArtifactCard from "../components/ArtifactCard";
 const artifacts = [
   {
     title: "UniCom: University Community Platform",
-    description: "Automated multi-region AWS deployment pipeline using Terraform and GitHub Actions.",
-    image: "/artifacts/infra.jpg",
-    githubUrl: "https://github.com/pateljheel/infra",
-    tech: ["Terraform", "AWS", "GitHub Actions", "Containerization"]
+    description: "UniCom is a verified community platform designed exclusively for university students. It streamlines campus life by providing a secure, centralized hub to find roommates, buy/sell items, and organize carpools using university-authenticated accounts.",
+    image: "../artifacts/unicom-arch.png",
+    githubUrl: "https://github.com/pateljheel/unicom",
+    // blogUrl: "https://patejheel.medium.com/unicom-building-a-verified-community-platform-for-university-students-4d3b8f4e3c2",
+    tech: ["Terraform", "AWS", "GitHub Actions", "Containerization", "Semantic Search"]
   },
   {
-    title: "Resilient Microservices",
-    description: "A distributed system architecture using K8s to handle high-concurrency event processing.",
-    image: "/artifacts/microservices.jpg",
-    githubUrl: "https://github.com/pateljheel/microservices",
-    tech: ["Kubernetes", "Docker", "Node.js", "Redis"]
+    title: "Evaluating Masked Language Modeling Performance in Federated Learning Environments",
+    description: "This project evaluates Federated Learning for Masked Language Modeling using LoRA to minimize communication costs. It is a lightweight, scalable framework adaptable for MLM and can be extended to Causal Language Modeling tasks.",
+    image: "/artifacts/fl-simulation.png",
+    githubUrl: "https://github.com/pateljheel/dp-fl-mlm",
+    // blogUrl: "https://patejheel.medium.com/masked-language-modeling-mlm-in-the-context-of-federated-learning-fl-8f4e8b5c3e6",
+    tech: ["LLM", "PyTorch", "Federated Learning"]
   },
   {
-    title: "DataStream API",
-    description: "Real-time data ingestion service built with Go and Apache Kafka for high-throughput messaging.",
-    image: "/artifacts/datastream.jpg",
-    githubUrl: "https://github.com/pateljheel/datastream",
-    tech: ["Kafka", "PostgreSQL", "Docker"]
+    title: "Automating Root Cause Analysis with LLMs and MCP",
+    description: "This PoC demonstrates an example to automate Root Cause Analysis using LLMs and MCP.",
+    image: "/artifacts/auto-rca.webp",
+    githubUrl: "https://github.com/scienceto/mcp-rca",
+    blogUrl: "https://medium.com/@pateljheel/automating-root-cause-analysis-with-llms-and-mcp-from-golden-signals-to-intelligent-response-b921e4d46829",
+    tech: ["MCP", "LLM", "Automation", "SRE"]
+  },
+  {
+    title: "Self-Healing ETL Pipelines with LLM-Driven Transformation Repair",
+    description: "This project showcases an automated system that detects and repairs failed ETL data transformation logic using LLMs, ensuring robust and reliable data pipelines.",
+    image: "/artifacts/mcp-etl.webp",
+    githubUrl: "https://github.com/scienceto/mcp-etl",
+    blogUrl: "https://medium.com/@pateljheel/self-healing-etl-pipelines-with-llm-driven-transformation-repair-f02ee089b89c",
+    tech: ["MCP", "LLM", "Automation", "ETL"]
   }
 ];
 
@@ -62,7 +73,7 @@ export default function ArtifactsPage() {
     <div className="max-w-6xl mx-auto px-6 py-12 min-h-screen">
       <header className="mb-12">
         <h1 className="text-4xl font-bold text-white tracking-tight sm:text-5xl mb-4">
-          Systems <span className="text-blue-500">&</span> Architecture
+          Projects <span className="text-blue-500">&</span> Artifacts
         </h1>
         
         {/* Search Bar */}
@@ -117,7 +128,7 @@ export default function ArtifactsPage() {
       </header>
 
       {/* Artifacts Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
         {filteredArtifacts.map((artifact) => (
           <ArtifactCard key={artifact.title} {...artifact} />
         ))}
