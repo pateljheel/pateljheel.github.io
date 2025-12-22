@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@plugin "@tailwindcss/typography";
+
 :root {
   /* Force dark colors as the only option */
   --background: #000000;

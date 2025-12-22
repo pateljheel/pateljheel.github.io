@@ -1,0 +1,14 @@
+---
+title: "Automating Root Cause Analysis"
+summary: "Exploring how the Model Context Protocol bridges the gap between monitoring and resolution."
+date: "March 10, 2025"
+tags: ["MCP", "LLM", "SRE"]
+externalUrl: ""
+---
+
+### The Challenge of Modern SRE
+Modern distributed systems generate "Golden Signals" at an incredible rate. However, the gap between a **Signal** and a **Resolution** is usually filled by human toil...
+
+- Step 1: Ingesting Metrics
+- Step 2: Correlating Logs
+- Step 3: LLM Reasoning via MCP
