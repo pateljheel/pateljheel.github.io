@@ -27,8 +27,12 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           {post.title}
         </h1>
         <div className="flex gap-2 mt-6">
-          {post.tags.map(tag => (
-            <span key={tag} className="text-[10px] font-mono text-zinc-500 border border-white/10 px-2 py-1 rounded">
+          {/* Add string type here to resolve the 'any' error */}
+          {post.tags.map((tag: string) => (
+            <span
+              key={tag}
+              className="text-[10px] font-mono text-zinc-500 border border-white/10 px-2 py-1 rounded"
+            >
               #{tag}
             </span>
           ))}
