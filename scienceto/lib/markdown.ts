@@ -2,33 +2,34 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-const postsDirectory = path.join(process.cwd(), "content/posts");
+// Log the path to the console so you can see where it's looking during build
+const postsDirectory = path.join(process.cwd(), "content", "posts");
+console.log("Looking for posts in:", postsDirectory);
 
 export function getSortedPostsData() {
-  // Ensure directory exists to prevent build errors
-  if (!fs.existsSync(postsDirectory)) return [];
+  // 1. Check if directory exists
+  if (!fs.existsSync(postsDirectory)) {
+    console.warn("Directory NOT found:", postsDirectory);
+    return [];
+  }
 
   const fileNames = fs.readdirSync(postsDirectory);
   
+  // 2. Filter for .md files only
   const allPostsData = fileNames
-    .filter((fileName) => fileName.endsWith(".md")) // Only process markdown
+    .filter((fileName) => fileName.endsWith(".md"))
     .map((fileName) => {
       const id = fileName.replace(/\.md$/, "");
       const fullPath = path.join(postsDirectory, fileName);
       const fileContents = fs.readFileSync(fullPath, "utf8");
-      const { data } = matter(fileContents);
+      const matterResult = matter(fileContents);
 
       return {
         id,
-        title: data.title || "Untitled",
-        date: data.date || "",
-        summary: data.summary || "",
-        tags: data.tags || [],
-        externalUrl: data.externalUrl || null,
+        ...(matterResult.data as { title: string; date: string; summary: string; tags: string[]; externalUrl?: string }),
       };
     });
 
-  // Sort by date descending
   return allPostsData.sort((a, b) => (a.date < b.date ? 1 : -1));
 }
 
