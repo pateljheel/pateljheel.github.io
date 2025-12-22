@@ -29,7 +29,15 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Install dependencies
-        run: npm install
+        run: npm ci
+      - name: Cache Next.js build cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            scienceto/.next/cache
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('scienceto/package-lock.json', 'scienceto/next.config.js') }}
+          restore-keys: |
+            ${{ runner.os }}-nextjs-
       - name: Build with Next.js
         run: npx next build
       - name: Upload artifact

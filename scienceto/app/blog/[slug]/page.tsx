@@ -8,16 +8,11 @@ import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {
   const posts = getSortedPostsData();
-
-  console.log('Generating static params for slugs:', posts.map(p => p.id));
-
-  return posts.map((post) => ({
-    slug: post.id,
-  }));
+  return posts.map((post) => ({ slug: post.id }));
 }
 
-export default async function PostPage({ params, }: { params: { slug: string }; }) {
-  const { slug } = params;
+export default async function PostPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
   const post = await getPostData(slug);
 
   if (!post) notFound();
