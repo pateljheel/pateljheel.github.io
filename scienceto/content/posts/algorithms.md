@@ -7,12 +7,16 @@ tags: ["DSA"]
 
 Algorithms Illuminated, Tim Roughgarden teaches the basics of algorithms in the most accessible way imaginable. It consists of 4 parts, each in a separate book. You can find more details [here](https://www.algorithmsilluminated.org/).
 
+> Can we do better?
+
 ## Part 1: The Basics
 
-Part 1 provides an introduction to algorithms and some famous algorithms to illustrate why design and analysis of algorithms is important.
+Part 1 provides an introduction to algorithms, divide-and-conquer algorithm design paradigm and some famous algorithms to illustrate why design and analysis of algorithms is important.
 
 ### Solutions
 
 1. [Chapter 1 - Introduction](/blog/p01ch01)
+2. [Chapter 3 - Divide-and-Conquer Algorithms](/blog/p01ch03)
+
 
 Other chapters coming soon...
