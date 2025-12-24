@@ -9,6 +9,7 @@ interface Post {
   date: string;
   tags: string[];
   externalUrl?: string | null;
+  child?: boolean; // Add this line
 }
 
 export default function BlogRegistryClient({ initialPosts }: { initialPosts: Post[] }) {
@@ -30,6 +31,8 @@ export default function BlogRegistryClient({ initialPosts }: { initialPosts: Pos
 
   // Search and Tag Filter Logic
   const filteredPosts = initialPosts.filter((post) => {
+    if (post.child === true) return false;
+    
     const matchesSearch =
       post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       post.summary.toLowerCase().includes(searchQuery.toLowerCase());

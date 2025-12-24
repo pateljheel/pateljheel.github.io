@@ -5,6 +5,8 @@ import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import "katex/dist/katex.min.css";
 import { notFound } from "next/navigation";
+import rehypeHighlight from "rehype-highlight";
+import "highlight.js/styles/atom-one-dark.css";
 
 export async function generateStaticParams() {
   const posts = getSortedPostsData();
@@ -39,8 +41,13 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         </div>
       </header>
 
-      <div className="prose prose-invert prose-blue max-w-none prose-headings:text-white prose-strong:text-white prose-code:text-blue-400">
-        <ReactMarkdown remarkPlugins={[remarkGfm, remarkMath]} rehypePlugins={[rehypeKatex]}>
+      <div className="prose prose-invert prose-blue max-w-none prose-headings:text-white prose-strong:text-white">
+        <ReactMarkdown remarkPlugins={[remarkGfm, remarkMath]}
+          rehypePlugins={[
+            [rehypeKatex, { strict: false }],
+            rehypeHighlight
+          ]}
+        >
           {post.content}
         </ReactMarkdown>
       </div>

@@ -26,6 +26,7 @@ export function getSortedPostsData() {
 
       return {
         id,
+        child: matterResult.data.child === true,
         ...(matterResult.data as { title: string; date: string; summary: string; tags: string[]; externalUrl?: string }),
       };
     });
