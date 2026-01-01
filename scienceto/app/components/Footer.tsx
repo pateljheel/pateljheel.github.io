@@ -23,7 +23,7 @@ export default function Footer() {
 
         {/* Right Side: Copyright/Brand */}
         <div className="text-[10px] tracking-widest text-zinc-500 uppercase font-mono">
-          © 2025 ScienceTo // Jheel Patel
+          © 2025 Jheel Space // Jheel Patel
         </div>
         
       </div>

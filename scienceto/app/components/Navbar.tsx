@@ -16,7 +16,7 @@ export default function Navbar() {
             <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="text-xl font-bold tracking-tighter hover:opacity-80 transition">
-                    Science<span className="text-blue-500">To</span>
+                    Jheel <span className="text-blue-500">Space</span>
                 </Link>
 
                 {/* Right Side Group */}
