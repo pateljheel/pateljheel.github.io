@@ -1,6 +1,6 @@
 ---
-title: "Solutions to Algorithms Illustrated (Part 1 - Chapter 3)"
-date: "2025-12-20"
+title: "Solutions to Algorithms Illustrated (Part 1 - Chapter 3 - Divide-and-Conquer Algorithms)"
+date: "2025-12-27"
 summary: "This is my journal which contains the solution to selected problems in Algorithms Illustrated by Tim Roughgarden."
 tags: ["DSA"]
 child: true

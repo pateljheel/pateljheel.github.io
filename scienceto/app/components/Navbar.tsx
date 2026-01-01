@@ -45,6 +45,19 @@ export default function Navbar() {
                             </svg>
                         </Link>
 
+                        {/* Medium Icon (Added) */}
+                        <Link
+                            href="https://medium.com/@pateljheel"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-zinc-400 hover:text-white transition-colors"
+                            aria-label="Medium"
+                        >
+                            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.41-3.38 6.41s-3.38-2.87-3.38-6.41 1.51-6.41 3.38-6.41 3.38 2.87 3.38 6.41zM24 12c0 3.17-.53 5.75-1.19 5.75s-1.19-2.58-1.19-5.75.53-5.75 1.19-5.75S24 8.83 24 12z" />
+                            </svg>
+                        </Link>
+
                         {/* LinkedIn Icon */}
                         <Link
                             href="https://linkedin.com/in/pateljheeln/"

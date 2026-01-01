@@ -1,5 +1,5 @@
 ---
-title: "Solutions to Algorithms Illustrated (Part 1 - Chapter 1)"
+title: "Solutions to Algorithms Illustrated (Part 1 - Chapter 1 - Introduction)"
 date: "2025-12-20"
 summary: "This is my journal which contains the solution to selected problems in Algorithms Illustrated by Tim Roughgarden."
 tags: ["DSA"]

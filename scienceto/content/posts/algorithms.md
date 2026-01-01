@@ -15,8 +15,8 @@ Part 1 provides an introduction to algorithms, divide-and-conquer algorithm desi
 
 ### Solutions
 
-1. [Chapter 1 - Introduction](/blog/p01ch01)
-2. [Chapter 3 - Divide-and-Conquer Algorithms](/blog/p01ch03)
+1. [Chapter 1 - Introduction](/blog/algop01ch01)
+2. [Chapter 3 - Divide-and-Conquer Algorithms](/blog/algop01ch03)
 
 
 Other chapters coming soon...
