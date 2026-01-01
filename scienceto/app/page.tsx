@@ -12,16 +12,31 @@ export default function HomePage() {
       <section className="mx-auto max-w-2xl py-20 sm:py-32">
         <div className="text-center">
           <div className="mb-8 flex justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-zinc-400 ring-1 ring-white/10 hover:ring-white/20 transition">
-              Latest Post: <span className="text-blue-500 font-semibold italic">Understanding Serverless Architecture</span>
-            </div>
+            <Link
+              href="/blog/pnpnature"
+              className="relative rounded-full px-3 py-1 text-sm leading-6 text-zinc-400 ring-1 ring-white/10 hover:ring-white/20 hover:bg-white/5 transition-all duration-300 flex items-center gap-2 group"
+            >
+              <span className="flex h-2 w-2 rounded-full bg-blue-500 animate-pulse" />
+              Latest Post:
+              <span className="text-blue-500 font-semibold italic group-hover:text-blue-400">
+                Computational Intractability & Natural Processes
+              </span>
+              <svg
+                className="w-3 h-3 text-zinc-500 group-hover:translate-x-0.5 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
           </div>
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
             Bridging the gap between <span className="text-blue-500 underline decoration-blue-500/30 underline-offset-8">software</span> and <span className="text-blue-500 italic">infra</span>.
           </h1>
           <p className="mt-6 text-lg leading-8 text-zinc-400 max-w-xl mx-auto">
-            I&apos;m Jheel Patel. I build systems where code meets cloud. 
-            <strong> ScienceTo</strong> is a collection of my notes on architecting 
+            I&apos;m Jheel Patel. I build systems where code meets cloud.
+            <strong> ScienceTo</strong> is a collection of my notes on architecting
             scalable software and resilient infrastructure.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
@@ -42,9 +57,9 @@ export default function HomePage() {
           <div>
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Engineering for the future of the Cloud</h2>
             <p className="mt-6 text-lg text-zinc-400">
-              My approach is guided by <span className="text-blue-500 font-bold border-b-2 border-blue-500 pb-0.5">Occam’s Razor</span>: 
-I believe the simplest solution is usually the most resilient. I translate complex system logic into robust, 
-  production-ready environments with a focus on the <span className="text-white font-semibold italic">5 pillars of the Well-Architected Framework</span>.
+              My approach is guided by <span className="text-blue-500 font-bold border-b-2 border-blue-500 pb-0.5">Occam’s Razor</span>:
+              I believe the simplest solution is usually the most resilient. I translate complex system logic into robust,
+              production-ready environments with a focus on the <span className="text-white font-semibold italic">5 pillars of the Well-Architected Framework</span>.
             </p>
             <div className="mt-8 flex gap-4">
               <div className="flex flex-col border-l-2 border-blue-500 pl-4">
@@ -78,7 +93,7 @@ I believe the simplest solution is usually the most resilient. I translate compl
           </div>
         </div>
       </section>
-      
+
       {/* Credentials Section */}
       <section className="mx-auto max-w-5xl py-24 border-t border-white/5">
         <div className="mb-12">
@@ -92,12 +107,12 @@ I believe the simplest solution is usually the most resilient. I translate compl
             <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
             <h3 className="text-xs font-mono tracking-[0.3em] text-zinc-500 uppercase">Active Certifications</h3>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {/* Active Card 1 */}
-            <Link 
-              href="https://www.credly.com/badges/f2eddbfc-b3cb-42a1-9b48-1a6672a69376/public_url" 
-              target="_blank" 
+            <Link
+              href="https://www.credly.com/badges/f2eddbfc-b3cb-42a1-9b48-1a6672a69376/public_url"
+              target="_blank"
               rel="noopener noreferrer"
             >
               <div className="group flex items-center gap-6 p-5 bg-zinc-900/40 border border-white/5 rounded-2xl hover:border-blue-500/30 transition-all">
@@ -112,9 +127,9 @@ I believe the simplest solution is usually the most resilient. I translate compl
             </Link>
 
             {/* Active Card 2 */}
-            <Link 
-              href="https://www.credly.com/badges/01ea60f2-92b6-4875-9532-b66a99d8186f/public_url" 
-              target="_blank" 
+            <Link
+              href="https://www.credly.com/badges/01ea60f2-92b6-4875-9532-b66a99d8186f/public_url"
+              target="_blank"
               rel="noopener noreferrer"
             >
               <div className="group flex items-center gap-6 p-5 bg-zinc-900/40 border border-white/5 rounded-2xl hover:border-blue-500/30 transition-all">
@@ -139,9 +154,9 @@ I believe the simplest solution is usually the most resilient. I translate compl
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {/* Inactive Card 1 */}
-            <Link 
-              href="https://www.credly.com/badges/859e4a91-1b07-4feb-8064-f9e1aab107c8/public_url" 
-              target="_blank" 
+            <Link
+              href="https://www.credly.com/badges/859e4a91-1b07-4feb-8064-f9e1aab107c8/public_url"
+              target="_blank"
               rel="noopener noreferrer"
             >
               <div className="flex items-center gap-4 p-4 bg-zinc-900/10 border border-white/5 rounded-xl grayscale opacity-60 hover:opacity-100 transition-opacity">
@@ -154,11 +169,11 @@ I believe the simplest solution is usually the most resilient. I translate compl
                 </div>
               </div>
             </Link>
-            
+
             {/* Inactive Card 2 */}
-            <Link 
-              href="https://www.credly.com/badges/4e62d23e-abf8-4585-89b6-0a0e087f66f2/public_url" 
-              target="_blank" 
+            <Link
+              href="https://www.credly.com/badges/4e62d23e-abf8-4585-89b6-0a0e087f66f2/public_url"
+              target="_blank"
               rel="noopener noreferrer"
             >
               <div className="flex items-center gap-4 p-4 bg-zinc-900/10 border border-white/5 rounded-xl grayscale opacity-60 hover:opacity-100 transition-opacity">
