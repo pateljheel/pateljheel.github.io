@@ -36,7 +36,7 @@ export default function HomePage() {
           </h1>
           <p className="mt-6 text-lg leading-8 text-zinc-400 max-w-xl mx-auto">
             I&apos;m Jheel Patel. I build systems where code meets cloud.
-            <strong> ScienceTo</strong> is a collection of my notes on architecting
+            <strong> Jheel Space</strong> is a collection of my notes on architecting
             scalable software and resilient infrastructure.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">

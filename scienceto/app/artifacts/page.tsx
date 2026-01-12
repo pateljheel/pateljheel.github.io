@@ -13,7 +13,7 @@ const artifacts = [
   },
   {
     title: "Evaluating Masked Language Modeling Performance in Federated Learning Environments",
-    description: "This project evaluates Federated Learning for Masked Language Modeling using LoRA to minimize communication costs. It is a lightweight, scalable framework adaptable for MLM and can be extended to Causal Language Modeling tasks.",
+    description: "This project evaluates Federated Learning for Masked Language Modeling using LoRA to minimize communication costs. It is an extensible project, based on flower framework, and can be extended to Causal Language Modeling tasks.",
     image: "/artifacts/fl-simulation.png",
     githubUrl: "https://github.com/pateljheel/dp-fl-mlm",
     // blogUrl: "https://patejheel.medium.com/masked-language-modeling-mlm-in-the-context-of-federated-learning-fl-8f4e8b5c3e6",
@@ -29,7 +29,7 @@ const artifacts = [
   },
   {
     title: "Self-Healing ETL Pipelines with LLM-Driven Transformation Repair",
-    description: "This project showcases an automated system that detects and repairs failed ETL data transformation logic using LLMs, ensuring robust and reliable data pipelines.",
+    description: "This PoC showcases an automated system that detects and repairs failed ETL data transformation logic using LLMs, ensuring robust and reliable data pipelines.",
     image: "/artifacts/mcp-etl.webp",
     githubUrl: "https://github.com/scienceto/mcp-etl",
     blogUrl: "https://medium.com/@pateljheel/self-healing-etl-pipelines-with-llm-driven-transformation-repair-f02ee089b89c",
