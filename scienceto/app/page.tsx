@@ -111,6 +111,40 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {/* Active Card 1 */}
             <Link
+              href="https://www.credly.com/badges/c73ba194-23e7-407b-a7cd-eb936380e8a1/public_url"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="group flex items-center gap-6 p-5 bg-zinc-900/40 border border-white/5 rounded-2xl hover:border-blue-500/30 transition-all">
+                <div className="w-14 h-14 bg-blue-600/10 rounded-xl flex items-center justify-center border border-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.1)]">
+                  <img src="/icons/aws-ap1.png" alt="AWS" className="w-8 h-8" />
+                </div>
+                <div>
+                  <h4 className="text-white font-semibold group-hover:text-blue-400 transition-colors">AWS Generative AI Developer</h4>
+                  <p className="text-xs text-zinc-500 font-mono italic">Professional // AP1-C01</p>
+                </div>
+              </div>
+            </Link>
+
+            {/* Active Card 1 */}
+            <Link
+              href="https://www.credly.com/badges/f2eddbfc-b3cb-42a1-9b48-1a6672a69376/public_url"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="group flex items-center gap-6 p-5 bg-zinc-900/40 border border-white/5 rounded-2xl hover:border-blue-500/30 transition-all">
+                <div className="w-14 h-14 bg-blue-600/10 rounded-xl flex items-center justify-center border border-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.1)]">
+                  <img src="/icons/aws-sap.png" alt="AWS" className="w-8 h-8" />
+                </div>
+                <div>
+                  <h4 className="text-white font-semibold group-hover:text-blue-400 transition-colors">AWS Solutions Architect</h4>
+                  <p className="text-xs text-zinc-500 font-mono italic">Professional // SAP-C02</p>
+                </div>
+              </div>
+            </Link>
+
+            {/* Active Card 1 */}
+            <Link
               href="https://www.credly.com/badges/f2eddbfc-b3cb-42a1-9b48-1a6672a69376/public_url"
               target="_blank"
               rel="noopener noreferrer"
