@@ -128,7 +128,7 @@ export default function HomePage() {
 
             {/* Active Card 1 */}
             <Link
-              href="https://www.credly.com/badges/f2eddbfc-b3cb-42a1-9b48-1a6672a69376/public_url"
+              href="https://www.credly.com/badges/f3ce8a65-571d-4a8e-ab87-9f0e40954b15/public_url"
               target="_blank"
               rel="noopener noreferrer"
             >
