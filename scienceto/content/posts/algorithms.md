@@ -18,6 +18,7 @@ Part 1 provides an introduction to algorithms, divide-and-conquer algorithm desi
 1. [Chapter 1 - Introduction](/blog/algop01ch01)
 2. [Chapter 3 - Divide-and-Conquer Algorithms](/blog/algop01ch03)
 3. [Chapter 4 - The Master Method](/blog/algop01ch04)
+4. [Chapter 5 - QuickSort](/blog/algop01ch05)
 
 
 Other chapters coming soon...
